@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="oldcursor.png">
+        <title>Click Trainer</title>
+        <link rel="stylesheet" href="clicker.css">
+        <script src="clicker.js" defer></script>
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="headingOne">Welcome <br>to Click Trainer</h1>
+            <input id="duration" type="number" placeholder="Seconds">
+            <br>
+            <button id="colorsOnWhite" onclick="normalColors()">Colors on White</button>
+            <button id="blackOnWhite" onclick="blackColors()">Black on White</button>
+            <button id="colorsOnBlackId" onclick="colorsOnBlack()">Colors on Black</button>
+            <button id="whiteOnBlack" onclick="reverseColors()">White on Black</button>
+            <h2 id="headingTwo">Press the Enter to Start</h2>
+        </div>
+
+        <div id="circle"></div>
+
+        <div id="popup">
+            <h3 id="timesUp">Time is Up!</h3>
+            <p id="score"></p>
+            <button id="againButton" onclick="location.reload()">Go Again</button>
+        </div>
+    </body>
+</html>
