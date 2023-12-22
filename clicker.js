@@ -113,7 +113,7 @@ function endGame() {
     if(misses === 0) {
         score.textContent = "You had " + hits + " hits, " + (misses-hits) + " misses, " + misses + " total clicks, and your CPS was 0";
     } else {
-        score.textContent = "You had " + hits + " hits, " + (misses-hits) + " misses, " + misses + " total clicks, your accuracy was " + (hits/misses).toFixed(2) + " and your CPS was " + (hits/duration).toFixed(2);
+        score.textContent = "You had " + hits + " hits, " + (misses-hits) + " misses, " + misses + " total clicks, your accuracy was " + ((hits/misses).toFixed(2)).toString().replace(".", "") + "% and your CPS was " + (hits/duration).toFixed(2);
     }
     
     popupAnimation = setInterval(function() {
